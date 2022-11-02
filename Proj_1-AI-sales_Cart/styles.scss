@@ -1,0 +1,135 @@
+// variables
+$primary-color: rgb(253, 163, 104);
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+	width: 60%;
+	height: 98vh;
+	border: 0.2rem solid rgb(36, 35, 35);
+	margin: 1vh auto;
+
+	// container header styles
+	&__header {
+		width: 100%;
+		height: 4.6rem;
+		background-color: $primary-color;
+		display: grid;
+		place-content: center;
+		position: relative;
+
+		&::before {
+			content: "SALE";
+			border: 0;
+			font-size: 1.35rem;
+			background-color: rgba(88, 1, 1, 0.938);
+			padding: 0.5rem 1rem;
+			border-radius: 0.5rem;
+			color: rgb(255, 255, 255);
+			letter-spacing: 0.3rem;
+			position: absolute;
+			top: -15%;
+			left: -3rem;
+		}
+
+		&__h1 {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		text-align: center;
+	}
+
+	// container main body styles
+	&__main {
+		padding: 0.2rem 1.5rem 0 1.5rem;
+		&__img {
+			width: 28rem;
+			height: 28rem;
+			object-fit: cover;
+		}
+
+		&__price {
+			font-size: 1rem;
+			margin-top: 1.5rem;
+			text-transform: uppercase;
+			margin-bottom: 2rem;
+
+			&--bold {
+				font-weight: 800;
+				font-size: 1.8rem;
+			}
+		}
+
+		&__para {
+			font-size: 1.5rem;
+
+			abbr {
+				cursor: pointer;
+				text-decoration: none;
+				font-style: oblique;
+			}
+		}
+		&__link {
+			display: inline-block;
+			margin: 1.5rem 0;
+		}
+		// color list for display
+		$color-lists: green, blue, orange, yellow, orangered, brown;
+
+		&__colors {
+			margin-bottom: 0.3rem;
+			@each $color-list in $color-lists {
+				.#{$color-list} {
+					background-color: $color-list;
+					width: 1.5rem;
+					height: 1.3rem;
+					display: inline-block;
+					margin-right: 1.2rem;
+				}
+			}
+		}
+
+		&__product-details {
+			&__header {
+				text-transform: uppercase;
+				font-size: 1.75rem;
+			}
+
+			&__list {
+				padding: 1.2rem 0 0 1.2rem;
+
+				li {
+					// display: inline-block;
+					padding-bottom: 1rem;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+
+	&__footer {
+		width: 100%;
+		height: 4.6rem;
+		background-color: darken($primary-color, 29%);
+		display: grid;
+		place-content: center;
+
+		&__para {
+			font-size: 1.7rem;
+			text-transform: uppercase;
+			font-weight: 800;
+			color: white;
+		}
+	}
+}

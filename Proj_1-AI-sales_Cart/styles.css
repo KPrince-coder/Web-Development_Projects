@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 60%;
+  height: 98vh;
+  border: 0.2rem solid rgb(36, 35, 35);
+  margin: 1vh auto;
+}
+.container__header {
+  width: 100%;
+  height: 4.6rem;
+  background-color: rgb(253, 163, 104);
+  display: grid;
+  place-content: center;
+  position: relative;
+  text-align: center;
+}
+.container__header::before {
+  content: "SALE";
+  border: 0;
+  font-size: 1.35rem;
+  background-color: rgba(88, 1, 1, 0.938);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.3rem;
+  position: absolute;
+  top: -15%;
+  left: -3rem;
+}
+.container__header__h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container__main {
+  padding: 0.2rem 1.5rem 0 1.5rem;
+}
+.container__main__img {
+  width: 28rem;
+  height: 28rem;
+  object-fit: cover;
+}
+.container__main__price {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.container__main__price--bold {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.container__main__para {
+  font-size: 1.5rem;
+}
+.container__main__para abbr {
+  cursor: pointer;
+  text-decoration: none;
+  font-style: oblique;
+}
+.container__main__link {
+  display: inline-block;
+  margin: 1.5rem 0;
+}
+.container__main__colors {
+  margin-bottom: 0.3rem;
+}
+.container__main__colors .green {
+  background-color: green;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__colors .blue {
+  background-color: blue;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__colors .orange {
+  background-color: orange;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__colors .yellow {
+  background-color: yellow;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__colors .orangered {
+  background-color: orangered;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__colors .brown {
+  background-color: brown;
+  width: 1.5rem;
+  height: 1.3rem;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.container__main__product-details__header {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+.container__main__product-details__list {
+  padding: 1.2rem 0 0 1.2rem;
+}
+.container__main__product-details__list li {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.container__footer {
+  width: 100%;
+  height: 4.6rem;
+  background-color: #ce5303;
+  display: grid;
+  place-content: center;
+}
+.container__footer__para {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
