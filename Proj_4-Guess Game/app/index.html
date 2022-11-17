@@ -1,0 +1,55 @@
+<!-- 
+    Date: Monday, November 14, 2022
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>🎮My Guessing Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <h1 class="header--title">Guess My Number!</h1>
+        <div class="flex">
+          <button class="btn header--reset">Again!</button>
+          <p class="header--range">(Between 0 and 20)</p>
+        </div>
+        <div class="header--questMark">&quest;</div>
+      </header>
+
+      <!-- main -->
+      <main class="body-sections">
+        <!-- display left -->
+        <section class="body-section body-section--left">
+          <input type="number" name="guessed-number" />
+          <button type="submit" class="btn">Check!</button>
+        </section>
+        <!-- display right -->
+        <section class="body-section body-section--right">
+          <p class="guess">Start guessing...</p>
+          <p class="score">💯 Score: <span class="score-value">20</span></p>
+          <p class="highscore">
+            🏅 HighScore: <span class="highscore-value">0</span>
+          </p>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <p class="copyright">All Rights Reserved &copy;2022</p>
+        <p>
+          By <span class="underline" title="The Developer">Prince-coder</span>😎
+        </p>
+      </footer>
+    </div>
+
+    <!-- script file links -->
+    <script src="script.js"></script>
+  </body>
+</html>

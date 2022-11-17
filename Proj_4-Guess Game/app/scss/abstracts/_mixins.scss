@@ -1,0 +1,23 @@
+// @use 'global' as *;
+
+@mixin btn-normal {
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  border: 0.1rem solid;
+  padding: 1rem 2rem;
+  border-radius: 1.3rem;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin btn-hover {
+  border: 0;
+}
+
+@mixin align-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
