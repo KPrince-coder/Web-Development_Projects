@@ -1,0 +1,123 @@
+@charset 'UTF-8';
+@forward 'reset';
+@forward 'media-queries';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		to top right,
+		rgba(27, 219, 27, 0.89) 40%,
+		rgba(17, 90, 226, 0.925)
+	);
+	header {
+		font-family: 'Alegreya Sans Medium';
+		margin-bottom: 5rem;
+		text-align: center;
+		cursor: pointer;
+
+		.title {
+			font-size: 3rem;
+			color: white;
+			text-transform: uppercase;
+			letter-spacing: 0.25rem;
+			border-bottom: 0.3rem solid white;
+		}
+	}
+
+	.d-list {
+		width: 90%;
+		display: flex;
+		gap: 1rem;
+		position: relative;
+		justify-content: space-between;
+
+		.flex {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			transition: all 0.7s ease-in-out;
+
+			.d-list__d-term {
+				font-size: 3rem;
+				border: 0.2rem groove rgba(17, 90, 226, 0.925);
+				padding: 0.5em 0.25em;
+				width: 100%;
+				text-align: center;
+				background-color: white;
+				color: rgba(17, 90, 226, 0.925);
+				border-radius: 3rem / 5rem;
+				transition: all 0.5s ease-in-out;
+				cursor: pointer;
+
+				&:hover {
+					background-color: transparent;
+					color: white;
+					border: 0.2rem solid white;
+				}
+			}
+
+			.d-list__d-def {
+				font-size: 1.6rem;
+				line-height: 1.5;
+				color: white;
+				letter-spacing: 0.08rem;
+				display: none;
+				position: relative;
+				animation: openDef 1s ease forwards;
+
+				.close {
+					display: inline-block;
+					font-size: 2.6rem;
+					position: absolute;
+					top: -1.45rem;
+					right: 1.4rem;
+					cursor: pointer;
+				}
+
+				&--title {
+					font-size: 1.8rem;
+					display: block;
+					text-align: center;
+					text-transform: uppercase;
+					text-decoration: underline white 0.2rem;
+					padding-bottom: 0.3em;
+				}
+				// display: none;
+			}
+
+			.active {
+				display: block;
+			}
+			// .close-animation {
+			// 	animation: closeDef 4s ease forwards;
+			// }
+		}
+		@media screen and (width < 600px) {
+			.flex {
+				width: 80%;
+			}
+		}
+
+		@keyframes openDef {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+
+		// @keyframes closeDef {
+		// 	from {
+		// 		opacity: 1;
+		// 	}
+		// 	to {
+		// 		opacity: 0;
+		// 	}
+		// }
+	}
+}

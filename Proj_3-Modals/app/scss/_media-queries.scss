@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+	.wrapper > .d-list {
+		flex-direction: column;
+		align-items: center;
+		overflow-y: auto;
+
+		.flex:not(:first-of-type) {
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media (width < 500px) {
+	html {
+		font-size: 50%;
+	}
+}

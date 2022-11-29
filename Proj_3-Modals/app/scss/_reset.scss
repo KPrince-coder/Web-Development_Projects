@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 30rem;
+	height: 100vh;
+	font-family: Poppins, sans-serif;
+}
